@@ -12,7 +12,6 @@ An NLP-powered platform designed to help researchers quickly locate, understand,
 - [Installation](#installation)
 - [Usage](#usage)
 - [Module Overview](#module-overview)
-- [Customization](#customization)
 - [Future Enhancements](#future-enhancements)
 - [License](#license)
 
@@ -73,7 +72,6 @@ By streamlining the navigation of extensive machine learning literature, this sy
    ```bash
    python -m spacy download en_core_web_sm
 
-
 ## Usage
 
 1. **Run the application:**
@@ -85,6 +83,24 @@ By streamlining the navigation of extensive machine learning literature, this sy
   - Enter a research query in the search bar.
   - The app will fetch the most relevant NIPS papers based on semantic similarity.
   - It will display concise summaries and extracted key concepts for quick insights.
+
+
+## Module Overview
+
+  The system is structured as follows:
+
+  - src/preprocessing.py – Handles text cleaning and tokenization.
+  - src/semantic_search.py – Implements Word2Vec-based document retrieval.
+  - src/summarization.py – Uses Longformer Encoder-Decoder for summarization.
+  - src/keyword_extraction.py – Extracts keywords using KeyBERT and clustering.
+  - src/streamlit_app.py – Streamlit-powered interactive UI for search and display.
+
+# Future Enhancements
+
+  - Multilingual Support: Extend search and summarization capabilities to support non-English papers.
+  - Dynamic Query Expansion: Introduce intelligent query expansion for better search relevance.
+  - User Feedback Integration: Implement a mechanism to improve retrieval accuracy based on user feedback.
+  - Enhanced Summarization Models: Fine-tune summarization models to improve coherence and accuracy.
 
 
 
