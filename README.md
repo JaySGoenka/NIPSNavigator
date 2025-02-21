@@ -1,4 +1,5 @@
-# NIPS Papers Semantic Search and Summarization System
+# NIPSNavigtor
+## Papers Semantic Search and Summarization System
 
 An NLP-powered platform designed to help researchers quickly locate, understand, and analyze research papers from the NIPS conference. Leveraging advanced natural language processing techniques, this system provides semantic search, concise summarization, and diverse keyword extraction—all in one interactive interface.
 
@@ -48,10 +49,25 @@ By streamlining the navigation of extensive machine learning literature, this sy
 
 ---
 
-## Installation
+## Installation 
 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your_username/nips-semantic-search.git
-   cd nips-semantic-search
+   git clone https://github.com/JaySGoenka/NIPSNavigator.git
+   cd NIPSNavigator
+
+2. **Create a virtual environment:**
+
+   python -m venv venv
+
+   source venv/bin/activate
+
+3. **Install Dependencies:**
+   pip install -r requirements.txt
+
+4. **Download the spaCy Language Model:**
+  python -m spacy download en_core_web_sm
+
+
+
