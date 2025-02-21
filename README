@@ -55,34 +55,3 @@ By streamlining the navigation of extensive machine learning literature, this sy
    ```bash
    git clone https://github.com/your_username/nips-semantic-search.git
    cd nips-semantic-search
-
-2. **Create and Activate a Virtual Environment (Recommended):**
-
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-3. **Install Dependencies:**
-
-    pip install -r requirements.txt
-
-    Key Dependencies:
-
-    - pandas
-    - spacy
-    - keybert
-    - sentence-transformers
-    - scikit-learn
-    - streamlit
-    - tqdm
-    - gensim
-
-4. **Download the spaCy Language Model:**
-
-    python -m spacy download en_core_web_sm
-
----
-
-## Usage
-
-    Running the Streamlit App:
-      - streamlit run src/streamlit_app.py 
