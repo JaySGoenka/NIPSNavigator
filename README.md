@@ -55,19 +55,36 @@ By streamlining the navigation of extensive machine learning literature, this sy
 
    ```bash
    git clone https://github.com/JaySGoenka/NIPSNavigator.git
+
    cd NIPSNavigator
 
 2. **Create a virtual environment:**
 
+  ```bash
    python -m venv venv
 
    source venv/bin/activate
 
 3. **Install Dependencies:**
+  ```bash
    pip install -r requirements.txt
 
 4. **Download the spaCy Language Model:**
+  ```bash
   python -m spacy download en_core_web_sm
+
+## Usage
+
+1. **Run the application:**
+  ```bash
+  streamlit run src/streamlit_app.py
+
+2. **Using the app:**
+
+  - Enter a research query in the search bar.
+  - The app will fetch the most relevant NIPS papers based on semantic similarity.
+  - It will display concise summaries and extracted key concepts for quick insights.
+
 
 
 
